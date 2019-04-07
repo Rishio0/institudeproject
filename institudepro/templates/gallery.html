@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+<html>
+
+<head>
+    <title>Gallery Page</title>
+</head>
+<body>
+{% block child_block %}
+    <h1 class="text-center text-danger">Gallery</h1>
+    <div class="container">
+        <div class="row">
+              <div class="col-md-6">
+                <img src="{% static 'images/pic1.jpg' %}" style="width: 100%; height: 100%;">
+              </div>
+              <div class="col-md-6">
+                    <img src="{% static 'images/77599.jpg' %}" style="width: 100%; height: 100%;">
+              </div>
+        </div>
+        <div class="row">
+              <div class="col-md-6">
+                <img src="{% static 'images/77621.jpg' %}" style="width: 100%; height: 100%;">
+              </div>
+              <div class="col-md-6">
+                    <img src="{% static 'images/306942.jpg' %}" style="width: 100%; height: 100%;">
+              </div>
+        </div>
+        <div class="row">
+              <div class="col-md-6">
+                <img src="{% static 'images/unsplash.jpg' %}" style="width: 100%; height: 100%;">
+              </div>
+              <div class="col-md-6">
+                    <img src="{% static 'images/77599.jpg' %}" style="width: 100%; height: 100%;">
+              </div>
+        </div>
+
+
+</div><br>
+    </body>
+    </html>
+{% endblock %}
